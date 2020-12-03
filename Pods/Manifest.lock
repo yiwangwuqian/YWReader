@@ -1,0 +1,20 @@
+PODS:
+  - SSZipArchive (2.2.3)
+  - TouchXML (0.1)
+
+DEPENDENCIES:
+  - SSZipArchive
+  - TouchXML (~> 0.1)
+
+SPEC REPOS:
+  trunk:
+    - SSZipArchive
+    - TouchXML
+
+SPEC CHECKSUMS:
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  TouchXML: 37089088da5e46f0f4a8797d320fbcfed395ab46
+
+PODFILE CHECKSUM: 29853e9408f527048b0acef6db428e2678d8bc01
+
+COCOAPODS: 1.8.4
