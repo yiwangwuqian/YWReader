@@ -7,7 +7,7 @@
 
 #import "YWMainViewController.h"
 #import "LSYReadModel.h"
-#import <YWHTMLKit/YWHTMLViewController.h>
+#import "YWReaderViewController.h"
 
 @interface YWMainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -117,7 +117,8 @@
         
         dispatch_async(dispatch_get_main_queue(), ^{
             [self->_epubActivity stopAnimating];
-            YWHTMLViewController *controller = [[YWHTMLViewController alloc] initWithURLString:model.chapters[1].fullpath];
+            YWReaderViewController *controller = [[YWReaderViewController alloc] initWithURLString:model.chapters[1].fullpath];
+            controller.model = model;
             [self presentViewController:controller animated:YES completion:NULL];
         });
     });
